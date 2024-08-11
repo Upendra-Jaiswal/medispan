@@ -189,7 +189,7 @@ import cors from "cors";
 import { processFile } from "./fileProcessor.js";
 
 const app = express();
-const port = 3001;
+const port = import.meta.env.PORT || 3001;
 
 // Get the directory name of the current module
 const __filename = fileURLToPath(import.meta.url);
